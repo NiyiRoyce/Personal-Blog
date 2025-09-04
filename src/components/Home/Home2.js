@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillMediumCircle,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -19,37 +19,33 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I’m an <b className="purple">Enginner</b> who
+              discovered a deep passion for{" "}
+              <b className="purple">Data Engineering & Modelling</b> and{" "}
+              <b className="purple">Software Development</b>.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              I am skilled in{" "}
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple">Python, SQL, R, Typescript, C#, Matlab, Node.js and React</b>
+              </i>{" "}
+              with experience across{" "}
+              <b className="purple">fintech, logistics, and oil & gas</b>{" "}
+              sectors.
+              <br />
+              <br />
+              My interests include building{" "}
+              <i>
+                <b className="purple">data-driven solutions</b>, exploring{" "}
+                <b className="purple">AI & predictive modeling</b>, and writing
+                about{" "}
+                <b className="purple">data/tech topics on Medium</b>.
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I enjoy creating products and tools that transform{" "}
+              <b className="purple">data into insights</b> and{" "}
+              <b className="purple">ideas into scalable solutions</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +63,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/niyiroyce"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +73,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/@pyniyi"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +83,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/neyfrosh/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +93,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://medium.com/@niyi.py"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiFillMediumCircle />
                 </a>
               </li>
             </ul>

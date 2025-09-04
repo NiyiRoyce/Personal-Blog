@@ -8,6 +8,21 @@ import Type from "./Type";
 function Home() {
   return (
     <section>
+      {/* Inline CSS keyframes for bounce animation */}
+      <style>{`
+        @keyframes bounceUpDown {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+        .bounce {
+          animation: bounceUpDown 4s ease-in-out infinite;
+        }
+      `}</style>
+
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -22,7 +37,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> ADEBOWALE ADENIYI</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -34,7 +49,7 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid bounce"
                 style={{ maxHeight: "450px" }}
               />
             </Col>

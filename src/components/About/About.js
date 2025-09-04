@@ -10,6 +10,21 @@ import Toolstack from "./Toolstack";
 function About() {
   return (
     <Container fluid className="about-section">
+      {/* Inline CSS keyframes for bounce animation */}
+      <style>{`
+        @keyframes bounceUpDown {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+        .bounce {
+          animation: bounceUpDown 4s ease-in-out infinite;
+        }
+      `}</style>
+
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -22,7 +37,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Know Who <strong className="purple">I AM</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -31,7 +46,12 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            {/* Added bounce class here */}
+            <img
+              src={laptopImg}
+              alt="about"
+              className="img-fluid bounce"
+            />
           </Col>
         </Row>
         <h1 className="project-heading">
